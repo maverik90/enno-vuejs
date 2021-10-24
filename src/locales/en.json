@@ -1,0 +1,21 @@
+{
+    "menu":{
+        "welcome": "Welcome",
+        "workshops": "Workshops",
+        "insights": "Insights",
+        "contact": "Contact"
+    },
+    "home":{
+        "hero_top_text": "We are ENNO",
+        "hero_heading": "We design engaging digital experiences.",
+        "hero_content": "ENNO combines digital design with storytelling, harnesses technology and interprets data to realise truly original customer experiences that make a lasting impact on your business.",
+        "hero_work_btn": "Let's work together"
+    },
+    "Workshops":{
+        "hero_heading": "We design engaging digital experiences.",
+        "welcome": "Welcome!",
+        "yes-button": "Yes",
+        "no-button": "No!"
+    }
+
+}

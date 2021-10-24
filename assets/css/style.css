@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Cabin";
+    src: local("Cabin"),
+     url(~assets/fonts/cabin-v18-latin-700.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight:200;
+    src: local("Inter"),
+     url(~assets/fonts/inter-v3-latin-200.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight:400;
+    src: local("Inter"),
+     url(~assets/fonts/inter-v3-latin-regular.woff2) format("woff2");
+}
+
+
+@font-face {
+    font-family: "Inter";
+    font-weight:700;
+    src: local("Inter"),
+     url(~assets/fonts/inter-v3-latin-700.woff2) format("woff2");
+}
+
+
+body{
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.63em;
+    --global-primary-color:#FFCC02;
+}
+
+body *{
+    transition: 0.3s all;
+}
+
+h1, .h1 {
+    font-family: "Cabin", Helvetica, Arial, sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1.285em;
+}
+
+h6, .h6 {
+    color: rgba(255, 255, 255, 0.34901960784313724);
+    font-size: 0.75em;
+    line-height: 1.63em;
+}
+
+/* global animations */
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .5s;
+}
+.fade-enter,
+.fade-leave,
+.fade-leave-to{
+    opacity: 0;
+}
