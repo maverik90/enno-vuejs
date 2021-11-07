@@ -9,7 +9,11 @@
         "hero_top_text": "Wir sind ENNO",
         "hero_heading": "Wir gestalten digitale Erlebnisse.",
         "hero_content": "ENNO verbindet digitales Design mit Storytelling, nutzt Technologien und interpretiert Daten, um einzigartige Kundenerlebnisse zu realisieren, die Ihren Unternehmenserfolg nachhaltig beeinflussen.",
-        "hero_work_btn": "Lassen Sie uns zusammenarbeiten"
+        "hero_work_btn": "Lassen Sie uns zusammenarbeiten",
+        "clients":{
+            "subheading": "Ausgewählte Projekte",
+            "heading": "Wir setzen auf benutzerfreundliche und effiziente Lösungen."
+        }
     }
 
 }

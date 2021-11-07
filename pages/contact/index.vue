@@ -6,7 +6,7 @@
 
 
 export default {
-    name: 'Workshop',
+    name: 'contact',
     layout: 'subpages', // name of your new layout
     components: {
         

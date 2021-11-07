@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: 'Workshop',
+    name: 'insights',
     layout: 'subpages', // name of your new layout
     components: {
         

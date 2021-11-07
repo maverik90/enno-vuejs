@@ -1,31 +1,31 @@
 <template>
     <b-nav align="right" class="enno_nav">
-        <NuxtLink :to="getcurrentLocale +'/'">{{ $t('menu.welcome') }}</NuxtLink>
-        <NuxtLink :to="getcurrentLocale + '/workshop'">{{ $t('menu.workshops') }}</NuxtLink>
-        <NuxtLink :to="getcurrentLocale + '/workshop'">{{ $t('menu.workshops') }}</NuxtLink>
-        <NuxtLink to="/insights">{{ $t('menu.insights') }}</NuxtLink>
-        <NuxtLink to="/contact">{{ $t('menu.contact') }}</NuxtLink>
+        <NuxtLink :to="{ name: 'index___' + getcurrentLocale }">{{ $t('menu.welcome') }}</NuxtLink>
+        <NuxtLink :to="{ name: 'workshops___' + getcurrentLocale }">{{ $t('menu.workshops') }}</NuxtLink>
+        <NuxtLink :to="{ name: 'insights___' + getcurrentLocale }">{{ $t('menu.insights') }}</NuxtLink>
+        <NuxtLink :to="{ name: 'contact___' + getcurrentLocale }">{{ $t('menu.contact') }}</NuxtLink>
     </b-nav>
 </template>
 
 <script>
+import EnnoHomepageHeader from '@/components/includes/Header';
+
 export default {
     name:'EnnoMenu',
+
+    components:{
+        EnnoHomepageHeader
+    },
     computed: {
         availableLocales () {
             return this.$i18n.locales.filter(i => i.code == this.$i18n.locale)
         },
         getcurrentLocale () {
             var currentLocale = this.$i18n.locales.filter(i => i.code == this.$i18n.locale);
-            console.log(currentLocale[0].code);
-            if(currentLocale[0].code == 'en'){
-                return '';
-            }else{ 
-                return currentLocale[0].code;
-            }
+            return currentLocale[0].code;
         }
-    }
 
+    }
 }
 
 </script>

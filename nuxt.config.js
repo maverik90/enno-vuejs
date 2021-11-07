@@ -26,7 +26,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/fontawesome.js',
-    '~/plugins/vue-typed.js',
+    '~/plugins/registerPlugins.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -59,17 +59,15 @@ export default {
     }
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-
+  computed:{
+    getcurrentLocale () {
+        var currentLocale = this.$i18n.locales.filter(i => i.code == this.$i18n.locale);
+        return currentLocale[0].code;
+    }
   },
 
-  mixin:{
-    data: function() {
-      return {
-        GlobalVar:'CodeChief is Awesome!'
-      }
-    }
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {
   }
-
+  
 }
